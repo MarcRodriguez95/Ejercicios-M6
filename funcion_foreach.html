@@ -1,0 +1,23 @@
+//formulario con un text box para introducir 4 nombres que se guardaran en una array nombres, despues hay un boton que con un foraech los imprimimos en rojo.
+
+<html>
+<head>
+<title>Funcion foreach()</title>
+<script src="exe_foreach.js"></script>
+</head>
+
+<form id="form1">
+  Primer nombre: <input type="text" id="name1"><br>
+  Segundo nombre: <input type="text" id="name2"><br>
+  Tercer nombre: <input type="text" id="name3"><br>
+  Cuarto nombre: <input type="text" id="name4"><br>
+
+</form>
+
+  <input type="submit" value="Guardar nombres" onClick="guardar()">
+  <input type="submit" value="Escribir nombres" onClick="nombres.forEach(escribir)">
+
+  <p id="hoja"></p>
+
+</body>
+</html>

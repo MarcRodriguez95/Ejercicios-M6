@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<script language="JavaScript"> 
+function controlarCaracteres()
+{
+  if (document.form1.curriculum.value.length>2000)
+    alert('curriculum muy largo');
+else
+alert('datos correctos');
+}
+</script>
+<form name="form1">
+&lt;textarea name=&quot;curriculum&quot; rows="10" cols="50" 
+&gt;&lt;/textarea&gt;
+<br>
+<input type="button" value="Mostrar" onClick="controlarCaracteres()">
+</form>
+</body>
+</html>

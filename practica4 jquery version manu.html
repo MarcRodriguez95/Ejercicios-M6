@@ -1,0 +1,79 @@
+<html>
+<head>
+<title></title>
+</head>
+
+<style type="text/css"> 
+thead {color:green;}
+tbody {color:blue;}
+tfoot {color:red;}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.recuadro {
+  background-color:#ffffcc;
+  font-family:verdana;
+  font-size:14px;
+
+ }
+
+</style>
+<header> 
+
+
+<script type="text/javascript" src="jquery.js"></script>
+
+<script>
+$(document).ready(
+function inicializarEventos()
+{
+  $("#boton1").click(asociarClase);
+  $("#boton2").click(desasociarClase);
+});
+function asociarClase()
+{
+  $("thead").addClass("recuadro");
+}
+function desasociarClase()
+{
+ $("thead").removeClass("recuadro");
+};
+
+
+
+</script>
+
+<input type="button" id="boton1" value="Asociar clase">
+<input type="button" id="boton2" value="Desasociar 
+clase">
+
+<table>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+</table>
+
+
+</body>
+</html>

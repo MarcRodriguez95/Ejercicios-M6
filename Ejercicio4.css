@@ -1,0 +1,20 @@
+.wrapper
+{
+	width: 600px;
+	background-color: blue;
+	border: solid;
+}
+
+.content
+{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	border: solid;
+	float: left;
+}
+footer
+{
+	background-color: green;
+	clear: both;
+}

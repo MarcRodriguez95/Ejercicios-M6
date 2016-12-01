@@ -1,0 +1,15 @@
+.narrow-column
+{
+	width: 300px;
+	border:solid;
+	padding: 10px;
+	float: left;
+}
+
+.wide-column
+{
+	width: 600px;
+	background-color: blue;
+	padding: 10px;
+	clear: both;
+}

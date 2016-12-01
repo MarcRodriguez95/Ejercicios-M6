@@ -1,0 +1,95 @@
+<html>
+<head>
+<title></title>
+</head>
+
+<style type="text/css"> 
+table, th, td {
+    border: 1px solid black;
+}
+
+.thead {
+border:1px solid;
+color: blue;
+}
+
+.tbody
+{
+	border:1px solid;
+color: red;
+}
+
+</style>
+<header> 
+
+
+<script type="text/javascript" src="jquery.js"></script>
+
+<script>
+var x;
+x=$(document);
+x.ready(inicializarEventos);
+
+function inicializarEventos()
+{
+  var x=$("#boton1");
+  x.click(asociarClase);
+  x=$("#boton2");
+  x.click(desasociarClase);
+
+  var y=$("#boton1");
+  y.click(asociarClase);
+  y=$("#boton2");
+  y.click(desasociarClase);
+
+}
+
+function asociarClase()
+{
+  var x=$("#tabla");
+  x.addClass("thead");
+  var y=$("#tabla2");
+  y.addClass("tbody");
+
+}
+
+function desasociarClase()
+{
+  var x=$("#tabla");
+  x.removeClass("thead");
+
+  var y=$("#tabla2");
+  y.removeClass("tbody");
+}
+
+
+</script>
+
+<input type="button" id="boton1" value="Asociar clase">
+<input type="button" id="boton2" value="Desasociar 
+clase">
+
+<table>
+<thead   id="tabla">
+<tr>
+	<td>Nombre</td>
+	<td>Apellido</td>
+</tr>
+</thead>
+<tbody   id="tabla2">
+<tr>
+	<td>Marc</td>
+	<td> Rodríguez</td>
+</tr>
+</tbody>
+<tbody   id="tabla2">
+<tr>
+	<td>Marc</td>
+	<td> Rodríguez</td>
+</tr>
+</tbody>
+</table>
+
+
+</body>
+</html>

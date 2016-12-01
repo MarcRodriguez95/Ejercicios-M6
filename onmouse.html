@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Problema</title>
+
+</head>
+<body>
+<script type="text/javascript">
+function presionar (objeto){
+  objeto.style.background='#ff0';
+}
+
+function levantar(objeto)
+{
+  objeto.style.background='red';
+}
+</script>
+<table border="1">
+<tr>
+<td onmousedown="presionar(this)" onmouseup="levantar(this)">Recuadro 
+1</td><td onmousedown="presionar(this)" onmouseup="levantar(this)">Recuadro 
+2</td>
+</tr>
+</table>
+</body>
+</html>

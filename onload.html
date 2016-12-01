@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Problema</title>
+
+</head>
+<script type="text/javascript">
+function ventanaBienvenida()
+{
+  var ventana=open('','','status=yes,width=400,height=250');
+  ventana.document.write("Bienvenido a este sitio.");
+}
+
+function ventanaDespedida()
+{
+  var ventana=open('','','status=yes,width=400,height=250');
+  ventana.document.write("Hasta siempre.");
+}
+</script>
+
+<body onload="ventanaBienvenida()" onunload="ventanaDespedida()">
+Sitio.
+</body>
+</html>

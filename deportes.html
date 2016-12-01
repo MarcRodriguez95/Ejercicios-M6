@@ -1,0 +1,39 @@
+<html>
+<head>
+</head>
+<body>
+<script language="JavaScript"> 
+function deportes()
+{
+  var dep=" ";
+  if (document.form1.check1.checked){
+    dep = dep + 'Futbol ';
+    alert('El deporte que has escogido es Futbol');
+    
+	}
+  if (document.form1.check2.checked){
+    dep = dep + 'Basquet ';
+    alert('El deporte que has escogido es Basquet' );
+ 
+	}
+  if (document.form1.check3.checked){
+    dep = dep + 'Tennis ';
+    alert('El deporte que has escogido es Tennis');
+
+	}
+	alert('Los deportes en total que has escogido son: ' + dep);
+}
+
+
+</script>
+<form name="form1">
+ Futbol: <INPUT type=checkbox name="check1" value="futbol"><br>
+ Basquet: <INPUT type=checkbox name="check2" value="basquet"><br>
+ Tennis: <INPUT type=checkbox name="check3" value="tennis"><br>
+<br>
+
+</form>
+
+<input type="button" value="resultado" onClick="deportes()">
+</body>
+</html>
